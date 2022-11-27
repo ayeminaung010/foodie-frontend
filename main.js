@@ -87,7 +87,7 @@ new Waypoint({
 let menuList = [
   {
     id:1,
-    img: "img/plate1.png",
+    img: "./img/plate1.png",
     title :'Barbecue Sald',
     description:'Special Delicious Dish',
     price: 22.2,
@@ -95,7 +95,7 @@ let menuList = [
   },
   {
     id:2,
-    img: "img/plate2.png",
+    img: "./img/plate2.png",
     title :'Sald with fish',
     description:'Special Delicious Dish',
     price: 30.4,
@@ -103,7 +103,7 @@ let menuList = [
   },
   {
     id:2,
-    img: "img/plate3.png",
+    img: "./img/plate3.png",
     title :'Spanach Sald',
     description:'Special Delicious Dish',
     price: 50,
