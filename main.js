@@ -57,7 +57,7 @@ new Waypoint({
     offset:"10%"
   })
 
- let  sections  = ['about','services','menus'];
+ let  sections  = ['about','services','menus','contact'];
  sections.forEach((section) =>{
   new Waypoint({
     element: document.getElementById(section),
@@ -70,6 +70,19 @@ new Waypoint({
     offset:"10%"
   })
  })
+
+ new Waypoint({
+  element: document.querySelector('#contact'),
+  handler: function(direction) {
+    let oldlink = document.querySelector('.nav-link.active');
+    if(oldlink != null){
+      oldlink.classList.remove('active');
+    }
+    let currentLink = document.querySelector('[href="#contact"]');
+    currentLink.classList.add('active');
+  },
+  offset:"40%"
+})
 
 let menuList = [
   {
@@ -104,7 +117,7 @@ menuList.forEach((menuList) =>{
 let div = document.createElement('div');
     div.classList.add('col-8','col-md-4','col-lg-2','text-center','to-right');
     div.innerHTML = `
-      <div class="card border-0 plate-card">
+      <div class="card border-0 plate-card mb-3">
           <div class="card-body">
               <img src="${menuList.img}" class=" w-75 text-center my-4" alt="">
               <div class="text">
